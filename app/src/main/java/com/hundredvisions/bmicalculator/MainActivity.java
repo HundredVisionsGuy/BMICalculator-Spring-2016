@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String results = "Results: ";
+
                 // Check to make sure feet, inches, & pounds are set
                 if (edit_feet.getText().length() == 0) {
                     edit_feet.setError("Please enter a #.");
