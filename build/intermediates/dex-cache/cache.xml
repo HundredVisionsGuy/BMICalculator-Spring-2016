@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_1460a18a4d6ed32c0b4406c5a433977f4aaf9c4c.jar" />
+    </item>
+    <item
+        jar="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_cf2ae13564a852bb84ff29a157c9d7929940b4f6.jar" />
+    </item>
+    <item
+        jar="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_71047c7d9e067025fccf33a1ee5c6f0cbdfbc68b.jar" />
+    </item>
+    <item
+        jar="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_617e12fb4d0a4b3ca45e336b4a531cdc69ae3267.jar" />
+    </item>
+    <item
+        jar="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_6ef3bc3c91373cdf6b26ceb1797cd44e5f57749f.jar" />
+    </item>
+    <item
+        jar="C:\Users\fonga846\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="M:\Publications\Winikka\winikkc\BMICalculator\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_a69e597fbcf82949b916762fc92e445abdecd5ea.jar" />
+    </item>
+
+</items>
