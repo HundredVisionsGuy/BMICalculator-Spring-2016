@@ -7,4 +7,6 @@ public class Model {
     static boolean checkRange() throws NumberFormatException {
         return false;
     }
+
+    // Add data validation here.
 }
