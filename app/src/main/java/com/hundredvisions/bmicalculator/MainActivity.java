@@ -37,23 +37,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String results = "Results: ";
-                int feet;
                 // Check to make sure feet, inches, & pounds are set
-                String str_feet;
-                str_feet = edit_feet.getText().toString();
-                /*if (Model.isEmpty(str_feet)) {
-                    results = "Feet is empty";
-                }
-                else {
-                    results = "Feet is not empty";
-                }*/
-                try {
-                    feet = (Model.validateFeet(str_feet));
-                }
-                catch (IllegalArgumentException iae) {
-                    results = iae.getMessage();
-                }
-/*                if (edit_feet.getText().length() == 0) {
+                if (edit_feet.getText().length() == 0) {
                     edit_feet.setError("Please enter a #.");
                     results += "Oops! There was an error. ";
                 }
@@ -65,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     results += "The length of feet is: " +
                             edit_feet.getText().length();
-                }*/
+                }
                 text_results.setText(results);
             }
         });
