@@ -1,1 +1,0 @@
-# BMICalculator-Spring-2016
