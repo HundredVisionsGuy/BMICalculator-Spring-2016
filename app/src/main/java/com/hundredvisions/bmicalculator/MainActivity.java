@@ -35,21 +35,18 @@ public class MainActivity extends AppCompatActivity {
         button_calculate_bmi.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String results = "Results: ";
-                // Check to make sure feet, inches, & pounds are set
-                if (edit_feet.getText().length() == 0) {
-                    edit_feet.setError("Please enter a #.");
-                    results += "Oops! There was an error. ";
-                }
-                else if (edit_feet.getText().length() > 1) {
-                    edit_feet.setError("Too many digits");
-                    results += "Our records indicate that you cannot possibly" +
-                            " be that tall. ";
+                if (Model.isEmpty(edit_feet)) {
+                    results += "the feet field is empty.";
                 }
                 else {
-                    results += "The length of feet is: " +
-                            edit_feet.getText().length();
+                    results += "the feet field is NOT empty.";
+                }
+                try {
+                    Model.checkRange("feet", edit_feet, 3, 9);
+                }
+                catch (IllegalArgumentException iae) {
+                    results += iae.getMessage();
                 }
                 text_results.setText(results);
             }
