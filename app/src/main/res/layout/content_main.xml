@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:hint="@string/edit_hint_inches"
+                android:maxLength="2"
                 android:ems="5"
                 android:id="@+id/edit_inches"
                 android:layout_marginLeft="15dp"/>
@@ -64,6 +65,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:hint="@string/edit_hint_weight"
+            android:maxLength="3"
             android:ems="10"
             android:id="@+id/edit_pounds"/>
         <Button

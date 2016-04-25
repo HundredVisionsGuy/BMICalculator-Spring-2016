@@ -36,22 +36,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String results = "Results: ";
-                if (Model.isEmpty(edit_feet)) {
-                    results += "the feet field is empty.";
+                if (Model.isValidFeet(edit_feet)) {
+                    results += "the feet field is valid.";
                 }
                 else {
-                    results += "the feet field is NOT empty.";
-                }
-                try {
-                    Model.checkRange("feet", edit_feet, 3, 9);
-                }
-                catch (IllegalArgumentException iae) {
-                    results += iae.getMessage();
+                    results += "the feet field is NOT valid.";
                 }
                 text_results.setText(results);
             }
         });
-
     }
-
 }
