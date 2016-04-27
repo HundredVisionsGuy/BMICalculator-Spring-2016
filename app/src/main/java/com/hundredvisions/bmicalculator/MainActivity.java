@@ -38,11 +38,21 @@ public class MainActivity extends AppCompatActivity {
 
                 String results = "Results: ";
                 // Check to make sure feet, inches, & pounds are set
-                if (edit_feet.getText().length() == 0) {
+                if (Model.isEmpty(edit_feet)) {
                     edit_feet.setError("Please enter a #.");
                     results += "Oops! There was an error. ";
                 }
-                else if (edit_feet.getText().length() > 1) {
+                if (Model.isEmpty(edit_pounds)) {
+                    edit_pounds.setError("Please enter a #.");
+                    results += "Oops! There was an error. ";
+                }
+                if (Model.isInRange(-50, 1, 100)) {
+                    results += "-50 is within 1 and 100";
+                }
+                else {
+                    results += "-50 is not within 1 and 100";
+                }
+                if (edit_feet.getText().length() > 1) {
                     edit_feet.setError("Too many digits");
                     results += "Our records indicate that you cannot possibly" +
                             " be that tall. ";
