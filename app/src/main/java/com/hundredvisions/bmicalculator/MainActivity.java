@@ -35,29 +35,9 @@ public class MainActivity extends AppCompatActivity {
         button_calculate_bmi.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String results = "Results: ";
-                // Check to make sure feet, inches, & pounds are set
-                if (Model.isValidInches(edit_inches))
-                {
-                    results += "Inches is valid.";
-                    int inches = Integer.parseInt(edit_inches.getText().toString());
-                    results += " Inches: " + inches;
-                }
-                else {
-                    results += "Inches is not valid";
-                }
-                if (Model.isValidPounds(edit_pounds)) {
-                    results += "\nPounds is valid";
-                }
-                else {
-                    results += "\nPounds is NOT valid";
-                }
-
+                String results = Model.calculateBMI(edit_feet, edit_inches, edit_pounds);
                 text_results.setText(results);
             }
         });
-
     }
-
 }

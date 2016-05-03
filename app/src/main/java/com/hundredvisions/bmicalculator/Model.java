@@ -13,6 +13,7 @@ public class Model {
     private static int lowerPoundsRange = 91;
     private static int upperPoundsRange = 443;
 
+    /* Form Validation */
     // Validate Feet
     static boolean isValidFeet(EditText field) {
         // Check if empty
@@ -99,5 +100,25 @@ public class Model {
         else {
             return false;
         }
+    }
+    static String calculateBMI(EditText edit_feet, EditText edit_inches,
+                               EditText edit_pounds) {
+        String results = "Results: ";
+        // Calculate BMI if all fields are valid
+        if (isValidFeet(edit_feet) && isValidInches(edit_inches) &&
+                isValidPounds(edit_pounds)) {
+            int inches = Integer.parseInt(edit_inches.getText().toString());
+            int feet = Integer.parseInt(edit_feet.getText().toString());
+            int totalinches = feet * 12 + inches;
+            int pounds = Integer.parseInt(edit_pounds.getText().toString());
+            double bmi;
+            bmi = Math.round(pounds * 703 / Math.pow(totalinches, 2));
+            results += "your BMI is " + bmi + ".";
+        }
+        else {
+            results += "there was an error with your inputs, please double-" +
+                    "check your inputs.";
+        }
+        return results;
     }
 }
